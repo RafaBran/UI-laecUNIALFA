@@ -1,0 +1,75 @@
+:host {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 20vh;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.containner-header{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title-navbar {
+  color: var(--vermelho-unialfa);
+}
+
+.nav-bar {
+  font-family: "Work Sans", serif;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+}
+
+.nav-bar {
+  display: flex;
+  font-family: "Manrope", serif;
+}
+
+.nav-bar-item {
+  margin: 1rem 1rem 0 0;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--branco);
+  transition: 0.5s;
+}
+
+.nav-bar-item:hover {
+  border-bottom: 1px solid var(--marinho-unialfa);
+}
+
+.socials {
+  display: flex;
+}
+
+.icon {
+  width: 2rem;
+  margin: 0.5rem;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.button-contact {
+  width: 8rem;
+  height: 3rem;
+  margin: 1rem;
+  background-color: var(--vermelho-unialfa);
+  color: var(--branco);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: "Work Sans", serif;
+  letter-spacing: 0.1rem;
+  transition: 0.2s ease;
+}
+
+.button-contact:hover {
+  margin: 1rem 1rem 1.5rem 1rem;
+  background-color: var(--marinho-unialfa);
+}
