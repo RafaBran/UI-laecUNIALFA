@@ -1,5 +1,4 @@
 :host {
-  position: fixed;
   display: block;
   width: 100%;
   height: 20vh;
@@ -34,12 +33,12 @@
   margin: 1rem 1rem 0 0;
   text-transform: uppercase;
   font-size: 0.8rem;
-  border-bottom: 1px solid var(--branco);
+  border-bottom: 2px solid var(--branco);
   transition: 0.5s;
 }
 
 .nav-bar-item:hover {
-  border-bottom: 1px solid var(--marinho-unialfa);
+  border-bottom: 2px solid var(--marinho-unialfa);
 }
 
 .socials {
