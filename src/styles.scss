@@ -3,7 +3,9 @@
 :root {
   --branco: #fff;
   --vermelho-unialfa: #E4341C;
+  --vermelho-escuro: #942719;
   --marinho-unialfa: #19323C;
+  --creme-unialfa: #FFFDD0;
 }
 
 //seletor para deliimtar o conteúdo
@@ -57,3 +59,19 @@ table {
   border-spacing: 0;
 }
 
+// @keyframes fadeIn {
+//   from {
+//     opacity: 0; /* Começa invisível */
+//     transform: translateY(20px); /* Vem de baixo */
+//   }
+//   to {
+//     opacity: 1; /* Totalmente visível */
+//     transform: translateY(0); /* Na posição final */
+//   }
+// }
+
+// /* Aplica a animação para todos os elementos */
+// * {
+//   animation: fadeIn 0.8s ease-in-out; /* Define o efeito */
+//   animation-fill-mode: both; /* Garante que os estilos da animação permaneçam no final */
+// }

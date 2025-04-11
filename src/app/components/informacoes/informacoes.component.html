@@ -1,1 +1,35 @@
-<p>informacoes works!</p>
+<div class="informacoes-containner">
+  <div class="nav-box limiter aligner">
+    <nav class="nav-bar ">
+      <a
+        class="nav-bar-item"
+        [routerLink]="[
+          { outlets: { 'informacoes-menu': ['analise-do-comportamento'] } }
+        ]"
+      >
+        <p>Análise do CPT</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[
+          { outlets: { 'informacoes-menu': ['artigos-e-textos'] } }
+        ]"
+      >
+        <p>Textos</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { 'informacoes-menu': ['etica'] } }]"
+      >
+        <p>Ética</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { 'informacoes-menu': ['monitoria'] } }]"
+      >
+        <p>Monitoria</p>
+      </a>
+    </nav>
+  </div>
+  <router-outlet name="informacoes-menu"></router-outlet>
+</div>

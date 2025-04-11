@@ -1,0 +1,70 @@
+.informacoes-containner {
+  height: 80vh;
+  width: 100%;
+  color: var(--marinho-unialfa);
+  background-color: var(--branco);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Corrigido: "20%px" -> "20%" */
+.nav-box {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  left: 10%;
+}
+
+/* Nav moderna */
+.nav-bar {
+  height: 100%;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+/* Itens com visual moderno e animação */
+.nav-bar-item {
+  padding: 0.7rem 1rem;
+  color: var(--marinho-unialfa);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.nav-bar-item:hover {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  transform: translateX(5px);
+}
+
+/* Opcional: destacar o item ativo */
+.nav-bar-item.router-link-active {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Vem de baixo */
+  }
+  to {
+    opacity: 1; /* Totalmente visível */
+    transform: translateY(0); /* Na posição final */
+  }
+}
+
+/* Aplica a animação para todos os elementos */
+* {
+  animation: fadeIn 0.8s ease-in-out; /* Define o efeito */
+  animation-fill-mode: both; /* Garante que os estilos da animação permaneçam no final */
+}

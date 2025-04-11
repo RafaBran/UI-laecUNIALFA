@@ -12,4 +12,13 @@ export class GerenciamentoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  username = '';
+  password = '';
+
+  onSubmit() {
+    console.log('Usuário:', this.username);
+    console.log('Senha:', this.password);
+    // Aqui você pode chamar um serviço de autenticação, por exemplo
+  }
+
 }
