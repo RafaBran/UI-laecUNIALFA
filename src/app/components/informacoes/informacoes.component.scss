@@ -2,7 +2,7 @@
   height: 80vh;
   width: 100%;
   color: var(--marinho-unialfa);
-  background-color: var(--branco);
+  background-color: var(--cinza-unialfa);
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -55,11 +55,11 @@
 @keyframes fadeIn {
   from {
     opacity: 0; /* Começa invisível */
-    transform: translateY(20px); /* Vem de baixo */
+    transform: translateX(20px); /* Vem de baixo */
   }
   to {
     opacity: 1; /* Totalmente visível */
-    transform: translateY(0); /* Na posição final */
+    transform: translateX(0); /* Na posição final */
   }
 }
 

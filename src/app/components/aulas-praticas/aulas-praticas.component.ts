@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-aulas-praticas',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AulasPraticasComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+  }
+
+  irParaComponenteA() {
+    this.router.navigate(['/componente-a']);
+  }
+
+  irParaComponenteB() {
+    this.router.navigate(['/componente-b']);
   }
 
 }

@@ -8,6 +8,7 @@ import { AnaliseDoComportamentoComponent } from './components/informacoes/analis
 import { ArtigosETextosComponent } from './components/informacoes/artigos-e-textos/artigos-e-textos.component';
 import { EticaComponent } from './components/informacoes/etica/etica.component';
 import { MonitoriaComponent } from './components/informacoes/monitoria/monitoria.component';
+import { ContatoProfessorComponent } from './components/equipe/contato-professor/contato-professor.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/informacoes', pathMatch: 'full' },
@@ -42,6 +43,7 @@ const routes: Routes = [
   { path: 'aulas-praticas', component: AulasPraticasComponent },
   { path: 'equipe', component: EquipeComponent },
   { path: 'gerenciamento', component: GerenciamentoComponent },
+  { path: 'contato-professor', component: ContatoProfessorComponent },
 ];
 
 @NgModule({

@@ -1,7 +1,73 @@
 .equipe-containner {
-  height: 80vh;
-  background-color: var(--marinho-unialfa);
+  height: auto;
+  background-color: var(--cinza-unialfa);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.card-horizontal {
+  height: 30%;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  background-color: var(--branco);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  max-width: 700px;
+  margin: 20px auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card-foto img {
+  width: 180px;
+  height: 240px;
+  object-fit: cover;
+  border-right: 1px solid var(--cinza-unialfa);
+}
+
+.card-conteudo {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.card-conteudo h2 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+  color: var(--marinho-unialfa);
+}
+
+.ocupacao {
+  font-size: 1rem;
+  color: var(--vermelho-unialfa);
+  margin: 0 0 5px;
+}
+
+.periodo {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.botao-contato {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: var(--vermelho-unialfa);
+  color: var(--branco);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.botao-contato:hover {
+  background-color: var(--vermelho-escuro);
+  margin-left: 0.2rem;
 }
