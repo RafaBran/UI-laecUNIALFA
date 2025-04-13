@@ -1,1 +1,32 @@
-<p>procedimentos works!</p>
+<div class="procedimentos-containner">
+  <div class="nav-box limiter aligner">
+    <nav class="nav-bar">
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { procedimentos: ['linha-base'] } }]"
+      >
+        <p>1 - linha de Base</p></a
+      >
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { procedimentos: ['treino-bebedouro'] } }]"
+      >
+        <p>2 - Treino ao bebedouro</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { procedimentos: ['modelagem'] } }]"
+      >
+        <p>3 - Modelagem</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { procedimentos: ['crf'] } }]"
+      >
+        <p>4 - CRF</p>
+      </a>
+    </nav>
+    <button class="botao-voltar" (click)="voltar()">Voltar</button>
+  </div>
+  <router-outlet name="procedimentos"></router-outlet>
+</div>

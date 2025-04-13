@@ -13,12 +13,12 @@ export class AulasPraticasComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  irParaComponenteA() {
-    this.router.navigate(['/componente-a']);
+  irParaProcedimentos() {
+    this.router.navigate(['/procedimentos']);
   }
 
-  irParaComponenteB() {
-    this.router.navigate(['/componente-b']);
+  irParaAgenda() {
+    this.router.navigate(['/agenda']);
   }
 
 }
