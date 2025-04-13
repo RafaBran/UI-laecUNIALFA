@@ -1,1 +1,37 @@
-<p>contato-katarine works!</p>
+<div class="contato-professor-containner">
+  <div class="dialog-container">
+    <h2>Entrar em Contato com Catharine</h2>
+
+    <label for="nome">Seu Nome:</label>
+    <input
+      type="text"
+      id="nome"
+      [(ngModel)]="nome"
+      placeholder="Digite seu nome"
+      required
+    />
+
+    <label for="email">Seu E-mail:</label>
+    <input
+      type="email"
+      id="email"
+      [(ngModel)]="email"
+      placeholder="exemplo@email.com"
+      required
+    />
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea
+      id="mensagem"
+      rows="5"
+      [(ngModel)]="mensagem"
+      placeholder="Digite sua mensagem"
+      required
+    ></textarea>
+
+    <div class="botoes">
+      <button class="btn-voltar" (click)="voltar()">Voltar</button>
+      <button class="btn-enviar" (click)="enviar()">Enviar</button>
+    </div>
+  </div>
+</div>

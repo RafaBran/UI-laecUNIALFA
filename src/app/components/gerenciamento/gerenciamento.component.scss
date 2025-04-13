@@ -26,12 +26,9 @@
 }
 
 .login-box h2 {
-  margin-bottom: 2rem;
-  color: var(--vermelho-unialfa);
-  font-weight: bolder;
-  font-size: 1.5rem;
-
-}
+  color: var(--marinho-unialfa);
+  margin-bottom: 20px;
+  text-align: center;}
 
 form {
   display: flex;
@@ -40,12 +37,13 @@ form {
 }
 
 input {
-  padding: 0.8rem 1rem;
-  border-radius: 0.8rem;
-  font-size: 1rem;
-  outline: none;
-  transition: 0.3s;
   width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--cinza-unialfa);
+  margin-bottom: 15px;
+  resize: vertical;
 }
 
 button {
@@ -83,11 +81,11 @@ button:hover {
 @keyframes fadeIn {
   from {
     opacity: 0; /* Começa invisível */
-    transform: translateX(20px); /* Vem de baixo */
+    // transform: translateX(20px); /* Vem de baixo */
   }
   to {
     opacity: 1; /* Totalmente visível */
-    transform: translateX(0); /* Na posição final */
+    // transform: translateX(0); /* Na posição final */
   }
 }
 
@@ -96,3 +94,4 @@ button:hover {
   animation: fadeIn 0.8s ease-in-out; /* Define o efeito */
   animation-fill-mode: both; /* Garante que os estilos da animação permaneçam no final */
 }
+

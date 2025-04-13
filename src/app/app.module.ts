@@ -27,6 +27,7 @@ import { LinhaDeBaseComponent } from './components/aulas-praticas/procedimentos/
 import { TreinoAoBebedouroComponent } from './components/aulas-praticas/procedimentos/treino-ao-bebedouro/treino-ao-bebedouro.component';
 import { ModelagemComponent } from './components/aulas-praticas/procedimentos/modelagem/modelagem.component';
 import { CrfComponent } from './components/aulas-praticas/procedimentos/crf/crf.component';
+import { ContatoMilenaComponent } from './components/equipe/contato-milena/contato-milena.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { CrfComponent } from './components/aulas-praticas/procedimentos/crf/crf.
     TreinoAoBebedouroComponent,
     ModelagemComponent,
     CrfComponent,
+    ContatoMilenaComponent,
   ],
   imports: [
     BrowserModule,

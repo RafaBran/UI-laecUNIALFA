@@ -77,3 +77,22 @@
 .btn-enviar:hover {
   background-color: var(--vermelho-escuro);
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Começa invisível */
+    // transform: translateX(20px); /* Vem de baixo */
+  }
+  to {
+    opacity: 1; /* Totalmente visível */
+    // transform: translateX(0); /* Na posição final */
+  }
+}
+
+/* Aplica a animação para todos os elementos */
+* {
+  animation: fadeIn 0.8s ease-in-out; /* Define o efeito */
+  animation-fill-mode: both; /* Garante que os estilos da animação permaneçam no final */
+}
+
+

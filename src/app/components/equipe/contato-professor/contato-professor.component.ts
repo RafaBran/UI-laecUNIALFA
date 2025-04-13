@@ -14,6 +14,7 @@ export class ContatoProfessorComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   enviar() {
     if (!this.nome.trim() || !this.email.includes('@') || !this.mensagem.trim()) {
       alert('Por favor, preencha todos os campos corretamente.');

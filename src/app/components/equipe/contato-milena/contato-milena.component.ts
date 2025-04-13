@@ -3,13 +3,13 @@ import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-contato-tecnico',
-  templateUrl: './contato-tecnico.component.html',
-  styleUrls: ['./contato-tecnico.component.scss']
+  selector: 'app-contato-milena',
+  templateUrl: './contato-milena.component.html',
+  styleUrls: ['./contato-milena.component.scss']
 })
-export class ContatoTecnicoComponent implements OnInit {
+export class ContatoMilenaComponent implements OnInit {
 
-  nome: string = '';
+    nome: string = '';
     email: string = '';
     mensagem: string = '';
     constructor(private router:Router) { }

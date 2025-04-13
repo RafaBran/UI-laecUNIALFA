@@ -17,4 +17,34 @@ export class EquipeComponent implements OnInit {
     this.router.navigate(['/contato-professor']);
   }
 
+  irParaContatoRafael() {
+    this.router.navigate(['/contato-tecnico']);
+  }
+
+  irParaContatoAmanda() {
+    this.router.navigate(['/contato-amanda']);
+  }
+
+  irParaContatoCatharine() {
+    this.router.navigate(['/contato-katarine']);
+  }
+
+  irParaContatoHadassa() {
+    this.router.navigate(['/contato-hadasa']);
+  }
+
+  irParaContatoJulia() {
+    this.router.navigate(['/contato-julia']);
+  }
+
+  irParaContatoMatheus() {
+    this.router.navigate(['/contato-matheus']);
+  }
+  irParaContatoMilena() {
+    this.router.navigate(['/contato-milena']);
+  }
+
+
+
+
 }

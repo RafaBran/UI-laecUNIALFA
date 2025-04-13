@@ -5,51 +5,85 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.box {
+  position: relative;
+  height: 90%;
+  width: 20%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+/* Imagem de fundo */
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  z-index: 0;
+}
+
+/* Imagens específicas */
+.box-procedimentos::before {
+  background-image: url(../../../assets/images/foto-caixa-skinner.jpeg);
+}
+
+.box-agenda::before {
+  background-image: url(../../../assets/images/foto-laboratório-quadro.jpeg);
+}
+
+/* Efeito de escurecimento no hover + leve zoom */
+.box:hover::before {
+  filter: brightness(0.6) blur(2px);
+  transform: scale(1.05);
 }
 
 .botao-navegacao {
-  padding: 20px 40px;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 12px;
-  color: var(--branco);
-  cursor: pointer;
-  width: 20%;
-  transition: all 0.2s;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  min-width: 200px;
+  position: relative;
+  z-index: 1;
+  padding: 16px 32px;
+  font-size: 1.3rem;
   font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  color: var(--branco);
   background-color: var(--vermelho-unialfa);
-  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5);
-
+  cursor: pointer;
+  min-width: 200px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(3px);
 }
 
 .botao-navegacao:hover {
   background-color: var(--vermelho-escuro);
-  margin-bottom: 0.3rem;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
 }
 
+/* Fade suave ao entrar */
 @keyframes fadeIn {
   from {
-    opacity: 0; /* Começa invisível */
-    transform: translateX(20px); /* Vem de baixo */
+    opacity: 0;
+    transform: scale(0.96);
   }
   to {
-    opacity: 1; /* Totalmente visível */
-    transform: translateX(0); /* Na posição final */
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
-/* Aplica a animação para todos os elementos */
 * {
-  animation: fadeIn 0.8s ease-in-out; /* Define o efeito */
-  animation-fill-mode: both; /* Garante que os estilos da animação permaneçam no final */
+  animation: fadeIn 0.8s ease-in-out;
+  animation-fill-mode: both;
 }
-
-
-
-
-
-
-
-

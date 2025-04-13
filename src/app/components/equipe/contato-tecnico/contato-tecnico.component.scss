@@ -1,0 +1,96 @@
+.contato-professor-containner {
+  height: 80vh;
+  background-color: var(--cinza-unialfa);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dialog-container {
+  width: 50%;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: var(--branco);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dialog-container h2 {
+  color: var(--marinho-unialfa);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dialog-container label {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+  color: var(--marinho-unialfa);
+}
+
+.dialog-container input,
+.dialog-container textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--cinza-unialfa);
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-voltar,
+.btn-enviar {
+  flex: 1;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-voltar {
+  background-color: var(--cinza-unialfa);
+  color: var(--marinho-unialfa);
+}
+
+.btn-voltar:hover {
+  background-color: #bfbfbf;
+}
+
+.btn-enviar {
+  background-color: var(--vermelho-unialfa);
+  color: var(--branco);
+}
+
+.btn-enviar:hover {
+  background-color: var(--vermelho-escuro);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Começa invisível */
+    // transform: translateX(20px); /* Vem de baixo */
+  }
+  to {
+    opacity: 1; /* Totalmente visível */
+    // transform: translateX(0); /* Na posição final */
+  }
+}
+
+/* Aplica a animação para todos os elementos */
+* {
+  animation: fadeIn 0.8s ease-in-out; /* Define o efeito */
+  animation-fill-mode: both; /* Garante que os estilos da animação permaneçam no final */
+}
