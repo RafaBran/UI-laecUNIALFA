@@ -7,21 +7,129 @@
   margin-bottom: 10rem;
   background-color: var(--branco);
   border-radius: 1rem;
-  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5);}
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5);
+}
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0; /* Começa invisível */
-      // transform: translateX(20px); /* Vem de baixo */
-    }
-    to {
-      opacity: 1; /* Totalmente visível */
-      // transform: translateX(0); /* Na posição final */
-    }
-  }
+.box-titulo {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  /* Aplica a animação para todos os elementos */
-  * {
-    animation: fadeIn 0.8s ease-in-out; /* Define o efeito */
-    animation-fill-mode: both; /* Garante que os estilos da animação permaneçam no final */
+.titulo {
+  text-align: center;
+  line-height: 100px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.box-recursos {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  background-color: var(--marinho-unialfa);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5);
+  border-top: 6px solid var(--vermelho-unialfa);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icon-papper {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 2rem;
+  display: block;
+  background-image: url('/assets/icons/papel-branca.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+}
+
+.icon-papper:hover {
+  background-image: url('/assets/icons/papel-vermelho.svg');
+  transform: scale(1.1);
+}
+
+.icon-table {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+  display: block;
+  background-image: url('/assets/icons/tabela-branca.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+}
+
+.icon-table:hover {
+  background-image: url('/assets/icons/tabela-vermelha.svg');
+  transform: scale(1.1);
+
+}
+
+.texto {
+  height: 65%;
+  width: 100%;
+}
+
+.texto {
+  height: 65%;
+  width: 100%;
+  overflow-y: auto;
+  padding: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Scroll invisível no Chrome */
+.texto::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Estilos adicionais para o conteúdo */
+.texto h3 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  color: var(--marinho-unialfa);
+  text-transform: uppercase;
+}
+
+.texto p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.texto ul {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.texto li {
+  margin-bottom: 0.5rem;
+}
+
+.texto em {
+  font-style: italic;
+  color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Começa invisível */
+    // transform: translateX(20px); /* Vem de baixo */
   }
+  to {
+    opacity: 1; /* Totalmente visível */
+    // transform: translateX(0); /* Na posição final */
+  }
+}
+
+/* Aplica a animação para todos os elementos */
+* {
+  animation: fadeIn 0.8s ease-in-out; /* Define o efeito */
+  animation-fill-mode: both; /* Garante que os estilos da animação permaneçam no final */
+}

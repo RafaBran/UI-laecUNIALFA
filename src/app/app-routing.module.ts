@@ -19,6 +19,9 @@ import { ContatoJuliaComponent } from './components/equipe/contato-julia/contato
 import { ProcedimentosComponent } from './components/aulas-praticas/procedimentos/procedimentos.component';
 import { LinhaDeBaseComponent } from './components/aulas-praticas/procedimentos/linha-de-base/linha-de-base.component';
 import { AgendaComponent } from './components/aulas-praticas/agenda/agenda.component';
+import { TreinoAoBebedouroComponent } from './components/aulas-praticas/procedimentos/treino-ao-bebedouro/treino-ao-bebedouro.component';
+import { ModelagemComponent } from './components/aulas-praticas/procedimentos/modelagem/modelagem.component';
+import { CrfComponent } from './components/aulas-praticas/procedimentos/crf/crf.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/informacoes/(informacoes-menu:analise-do-comportamento)', pathMatch: 'full' },
@@ -59,17 +62,17 @@ const routes: Routes = [
       },
       {
         path: 'treino-bebedouro',
-        component: ArtigosETextosComponent,
+        component: TreinoAoBebedouroComponent,
         outlet: 'procedimentos',
       },
       {
         path: 'modelagem',
-        component: EticaComponent,
+        component: ModelagemComponent,
         outlet: 'procedimentos',
       },
       {
         path: 'crf',
-        component: MonitoriaComponent,
+        component: CrfComponent,
         outlet: 'procedimentos',
       },
     ],
