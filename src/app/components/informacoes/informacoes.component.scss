@@ -46,11 +46,6 @@
   transform: translateX(5px);
 }
 
-/* Opcional: destacar o item ativo */
-.nav-bar-item.router-link-active {
-  background-color: rgba(255, 255, 255, 0.2);
-  font-weight: bold;
-}
 
 @keyframes fadeIn {
   from {

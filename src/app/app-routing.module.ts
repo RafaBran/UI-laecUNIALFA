@@ -22,6 +22,9 @@ import { AgendaComponent } from './components/aulas-praticas/agenda/agenda.compo
 import { TreinoAoBebedouroComponent } from './components/aulas-praticas/procedimentos/treino-ao-bebedouro/treino-ao-bebedouro.component';
 import { ModelagemComponent } from './components/aulas-praticas/procedimentos/modelagem/modelagem.component';
 import { CrfComponent } from './components/aulas-praticas/procedimentos/crf/crf.component';
+import { BuenoMetutinoComponent } from './components/aulas-praticas/agenda/bueno-metutino/bueno-metutino.component';
+import { BuenoNoturnoComponent } from './components/aulas-praticas/agenda/bueno-noturno/bueno-noturno.component';
+import { PerimetralNoturnoComponent } from './components/aulas-praticas/agenda/perimetral-noturno/perimetral-noturno.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/informacoes/(informacoes-menu:analise-do-comportamento)', pathMatch: 'full' },
@@ -82,6 +85,9 @@ const routes: Routes = [
   { path: 'aulas-praticas', component: AulasPraticasComponent },
   { path: 'equipe', component: EquipeComponent },
   { path: 'gerenciamento', component: GerenciamentoComponent },
+  { path: 'bueno-matutino', component: BuenoMetutinoComponent },
+  { path: 'bueno-noturno', component: BuenoNoturnoComponent },
+  { path: 'perimetral-noturno', component: PerimetralNoturnoComponent },
   { path: 'contato-professor', component: ContatoProfessorComponent },
   { path: 'contato-tecnico', component: ContatoTecnicoComponent },
   { path: 'contato-hadasa', component: ContatoHadasaComponent },

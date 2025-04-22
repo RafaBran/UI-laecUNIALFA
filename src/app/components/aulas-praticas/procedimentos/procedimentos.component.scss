@@ -53,29 +53,27 @@
 }
 
 .botao-voltar {
-  position: relative;
-  bottom: 0px;
-  left: 0px;
-  padding: 12px 24px;
-  margin-left: 1.5rem;
-  margin-top: 2rem;
-  background-color: var(--marinho-unialfa);
-  color: var(--branco);
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 1000;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  height: 30px;
+  line-height: 30px;
   width: 50%;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+  color: var(--branco);
+  background-color: var(--marinho-unialfa);
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  margin: 0.3rem;
+  margin-left: 0.5rem;
+  margin-top: 5rem;
+  z-index: 1; /* Garante que esteja acima do fundo embaçado */
 }
 
 .botao-voltar:hover {
   background-color: var(--vermelho-unialfa);
   color: var(--branco);
-  transform: translateY(-2px);
+  transform: translateX(2px);
 }
 
 @keyframes fadeIn {

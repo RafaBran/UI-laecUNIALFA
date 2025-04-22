@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgendaComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router:Router,
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  irParaBuenoMatutino() {
+    this.router.navigate(['/bueno-matutino']);
+  }
+  irParaBuenoNoturno() {
+    this.router.navigate(['/bueno-noturno']);
+  }
+  irParaPerimetralNoturno() {
+    this.router.navigate(['/perimetral-noturno']);
+  }
+
+  voltar() {
+    this.router.navigate(['/aulas-praticas']);
   }
 
 }
