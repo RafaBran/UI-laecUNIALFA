@@ -10,17 +10,14 @@
   --dark-cinza-unialfa: #8a8585;
 }
 
-//seletor para deliimtar o conteúdo
 .limiter {
   max-width: 80%;
 }
 
-//seletor para centralizar o conteúdo
 .aligner {
   margin: 0 auto;
 }
 
-//reset básico
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +27,7 @@
 html, body {
   height: 100%;
   font-family: sans-serif;
+  background-color: var(--cinza-unialfa)
 }
 
 img {
@@ -60,20 +58,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-// @keyframes fadeIn {
-//   from {
-//     opacity: 0; /* Começa invisível */
-//     transform: translateY(20px); /* Vem de baixo */
-//   }
-//   to {
-//     opacity: 1; /* Totalmente visível */
-//     transform: translateY(0); /* Na posição final */
-//   }
-// }
-
-// /* Aplica a animação para todos os elementos */
-// * {
-//   animation: fadeIn 0.8s ease-in-out; /* Define o efeito */
-//   animation-fill-mode: both; /* Garante que os estilos da animação permaneçam no final */
-// }

@@ -2,13 +2,12 @@
   height: auto;
   width: 100%;
   color: var(--marinho-unialfa);
-  background-color: var(--cinza-unialfa);
+  background-color: var(--cinza-unialfa) !important;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-/* Corrigido: "20%px" -> "20%" */
 .nav-box {
   height: 100%;
   width: 15%;
@@ -16,7 +15,6 @@
   left: 10%;
 }
 
-/* Nav moderna */
 .nav-bar {
   height: 100%;
   width: 100%;
@@ -28,7 +26,6 @@
   padding: 1rem 0;
 }
 
-/* Itens com visual moderno e animação */
 .nav-bar-item {
   padding: 0.7rem 1rem;
   color: var(--marinho-unialfa);
@@ -38,7 +35,6 @@
   font-weight: bold;
   border-radius: 8px;
   transition: all 0.3s ease;
-  background-color: transparent;
 }
 
 .nav-bar-item:hover {
@@ -46,21 +42,17 @@
   transform: translateX(5px);
 }
 
-
 @keyframes fadeIn {
   from {
-    opacity: 0; /* Começa invisível */
-    // transform: translateX(20px); /* Vem de baixo */
+    opacity: 0;
   }
   to {
-    opacity: 1; /* Totalmente visível */
-    // transform: translateX(0); /* Na posição final */
+    opacity: 1;
   }
 }
 
-/* Aplica a animação para todos os elementos */
 * {
-  animation: fadeIn 0.8s ease-in-out; /* Define o efeito */
-  animation-fill-mode: both; /* Garante que os estilos da animação permaneçam no final */
+  animation: fadeIn 0.8s ease-in-out;
+  animation-fill-mode: both;
 }
 
