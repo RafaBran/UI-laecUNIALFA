@@ -25,6 +25,11 @@ import { CrfComponent } from './components/aulas-praticas/procedimentos/crf/crf.
 import { BuenoMetutinoComponent } from './components/aulas-praticas/agenda/bueno-metutino/bueno-metutino.component';
 import { BuenoNoturnoComponent } from './components/aulas-praticas/agenda/bueno-noturno/bueno-noturno.component';
 import { PerimetralNoturnoComponent } from './components/aulas-praticas/agenda/perimetral-noturno/perimetral-noturno.component';
+import { ExtincaoComponent } from './components/aulas-praticas/procedimentos/extincao/extincao.component';
+import { RecondicionamentoComponent } from './components/aulas-praticas/procedimentos/recondicionamento/recondicionamento.component';
+import { EsquemaRazaoFixaComponent } from './components/aulas-praticas/procedimentos/esquema-razao-fixa/esquema-razao-fixa.component';
+import { EsquemaRazaoVariavelComponent } from './components/aulas-praticas/procedimentos/esquema-razao-variavel/esquema-razao-variavel.component';
+import { TreinoDiscriminativoComponent } from './components/aulas-praticas/procedimentos/treino-discriminativo/treino-discriminativo.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/informacoes/(informacoes-menu:analise-do-comportamento)', pathMatch: 'full' },
@@ -76,6 +81,31 @@ const routes: Routes = [
       {
         path: 'crf',
         component: CrfComponent,
+        outlet: 'procedimentos',
+      },
+      {
+        path: 'extincao',
+        component: ExtincaoComponent,
+        outlet: 'procedimentos',
+      },
+      {
+        path: 'recondicionamento',
+        component: RecondicionamentoComponent,
+        outlet: 'procedimentos',
+      },
+      {
+        path: 'razao-fixa',
+        component: EsquemaRazaoFixaComponent,
+        outlet: 'procedimentos',
+      },
+      {
+        path: 'razao-variavel',
+        component: EsquemaRazaoVariavelComponent,
+        outlet: 'procedimentos',
+      },
+      {
+        path: 'treino-discriminativo',
+        component: TreinoDiscriminativoComponent,
         outlet: 'procedimentos',
       },
     ],

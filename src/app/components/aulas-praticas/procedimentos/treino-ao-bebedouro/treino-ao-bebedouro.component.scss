@@ -1,8 +1,8 @@
 .informacoes-etica-containner {
   height: 77%;
-  width: 70%;
+  width: 65%;
   position: fixed;
-  left: 20%;
+  left: 25%;
   margin-top: 1rem;
   margin-bottom: 10rem;
   background-color: var(--branco);
@@ -41,14 +41,14 @@
   height: 3rem;
   margin-left: 2rem;
   display: block;
-  background-image: url('/assets/icons/papel-branca.svg');
+  background-image: url("/assets/icons/papel-branca.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: background-image 0.5s ease;
 }
 
 .icon-papper:hover {
-  background-image: url('/assets/icons/papel-vermelho.svg');
+  background-image: url("/assets/icons/papel-vermelho.svg");
   transform: scale(1.1);
 }
 
@@ -57,16 +57,15 @@
   height: 3rem;
   margin-left: 1rem;
   display: block;
-  background-image: url('/assets/icons/tabela-branca.svg');
+  background-image: url("/assets/icons/tabela-branca.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: background-image 0.5s ease;
 }
 
 .icon-table:hover {
-  background-image: url('/assets/icons/tabela-vermelha.svg');
+  background-image: url("/assets/icons/tabela-vermelha.svg");
   transform: scale(1.1);
-
 }
 
 .texto {

@@ -28,6 +28,12 @@ import { TreinoAoBebedouroComponent } from './components/aulas-praticas/procedim
 import { ModelagemComponent } from './components/aulas-praticas/procedimentos/modelagem/modelagem.component';
 import { CrfComponent } from './components/aulas-praticas/procedimentos/crf/crf.component';
 import { ContatoMilenaComponent } from './components/equipe/contato-milena/contato-milena.component';
+import { ExtincaoComponent } from './components/aulas-praticas/procedimentos/extincao/extincao.component';
+import { RecondicionamentoComponent } from './components/aulas-praticas/procedimentos/recondicionamento/recondicionamento.component';
+import { EsquemaRazaoFixaComponent } from './components/aulas-praticas/procedimentos/esquema-razao-fixa/esquema-razao-fixa.component';
+import { EsquemaRazaoVariavelComponent } from './components/aulas-praticas/procedimentos/esquema-razao-variavel/esquema-razao-variavel.component';
+import { TreinoDiscriminativoComponent } from './components/aulas-praticas/procedimentos/treino-discriminativo/treino-discriminativo.component';
+// import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -57,11 +63,18 @@ import { ContatoMilenaComponent } from './components/equipe/contato-milena/conta
     ModelagemComponent,
     CrfComponent,
     ContatoMilenaComponent,
+    ExtincaoComponent,
+    RecondicionamentoComponent,
+    EsquemaRazaoFixaComponent,
+    EsquemaRazaoVariavelComponent,
+    TreinoDiscriminativoComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    // MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

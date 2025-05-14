@@ -25,6 +25,36 @@
       >
         <p>4 - CRF</p>
       </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { procedimentos: ['extincao'] } }]"
+      >
+        <p>5 - Extinção Operante</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { procedimentos: ['recondicionamento'] } }]"
+      >
+        <p>6 - Recondicionamento</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { procedimentos: ['razao-fixa'] } }]"
+      >
+        <p>7 - Razão fixa</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { procedimentos: ['razao-variavel'] } }]"
+      >
+        <p>8 - Razão Variável</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { procedimentos: ['treino-discriminativo'] } }]"
+      >
+        <p>9 - Treino Discriminativo</p>
+      </a>
       <button class="botao-voltar" (click)="voltar()">Voltar</button>
     </nav>
   </div>
