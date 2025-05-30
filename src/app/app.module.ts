@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -33,7 +32,11 @@ import { RecondicionamentoComponent } from './components/aulas-praticas/procedim
 import { EsquemaRazaoFixaComponent } from './components/aulas-praticas/procedimentos/esquema-razao-fixa/esquema-razao-fixa.component';
 import { EsquemaRazaoVariavelComponent } from './components/aulas-praticas/procedimentos/esquema-razao-variavel/esquema-razao-variavel.component';
 import { TreinoDiscriminativoComponent } from './components/aulas-praticas/procedimentos/treino-discriminativo/treino-discriminativo.component';
-// import { MatTooltipModule } from '@angular/material/tooltip';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserModule } from '@angular/platform-browser';
+import { CadastrosComponent } from './components/aulas-praticas/cadastros/cadastros.component';
 
 @NgModule({
   declarations: [
@@ -68,13 +71,17 @@ import { TreinoDiscriminativoComponent } from './components/aulas-praticas/proce
     EsquemaRazaoFixaComponent,
     EsquemaRazaoVariavelComponent,
     TreinoDiscriminativoComponent,
+    CadastrosComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    // MatTooltipModule
+    BrowserAnimationsModule,
+    MatTooltipModule,
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

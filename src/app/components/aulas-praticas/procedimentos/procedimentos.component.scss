@@ -41,6 +41,10 @@
   background-color: transparent;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .nav-bar-item:hover {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
   transform: translateX(5px);

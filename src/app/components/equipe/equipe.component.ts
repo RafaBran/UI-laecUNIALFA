@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./equipe.component.scss']
 })
 export class EquipeComponent implements OnInit {
+  isHovered = false;
 
   constructor(private router:Router) { }
 
@@ -44,7 +45,11 @@ export class EquipeComponent implements OnInit {
     this.router.navigate(['/contato-milena']);
   }
 
+  onMouseEnter() {
+    this.isHovered = true;
+  }
 
-
-
+  onMouseLeave() {
+    this.isHovered = false;
+  }
 }

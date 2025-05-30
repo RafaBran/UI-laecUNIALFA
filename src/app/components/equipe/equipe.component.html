@@ -118,7 +118,11 @@
     </div>
   </div>
 
-  <div class="card-horizontal">
+  <div
+    class="card-horizontal"
+    (mouseenter)="onMouseEnter()"
+    (mouseleave)="onMouseLeave()"
+  >
     <div class="card-foto">
       <img
         src="../../../assets/images/fotomilena.PNG"
@@ -134,4 +138,10 @@
       </button>
     </div>
   </div>
+  <img
+    src="../../../assets/images/easterEgg.png"
+    alt=""
+    class="noHovered"
+    [ngClass]="{ highlighted: isHovered }"
+  />
 </div>
