@@ -68,6 +68,22 @@
   transform: scale(1.1);
 }
 
+.icon-monitor {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+  display: block;
+  background-image: url('/assets/icons/monitor-branco.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+}
+
+.icon-monitor:hover {
+  background-image: url('/assets/icons/monitor-vermelho.svg');
+  transform: scale(1.1);
+}
+
 .texto {
   height: 65%;
   width: 100%;

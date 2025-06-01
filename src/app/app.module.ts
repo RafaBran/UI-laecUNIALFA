@@ -37,6 +37,13 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { CadastrosComponent } from './components/aulas-praticas/cadastros/cadastros.component';
+import { IntervaloFixoComponent } from './components/aulas-praticas/procedimentos/intervalo-fixo/intervalo-fixo.component';
+import { IntervaloVariavelComponent } from './components/aulas-praticas/procedimentos/intervalo-variavel/intervalo-variavel.component';
+import { EncadeamentoComponent } from './components/aulas-praticas/procedimentos/encadeamento/encadeamento.component';
+import { AnoPeriodoComponent } from './components/aulas-praticas/procedimentos/ano-periodo/ano-periodo.component';
+import { AnoPerComponent } from './components/aulas-praticas/agenda/ano-per/ano-per.component';
+import { A2025s1Component } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1.component';
+import { A2025s2Component } from './components/aulas-praticas/agenda/ano-per/a2025s2/a2025s2.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +79,13 @@ import { CadastrosComponent } from './components/aulas-praticas/cadastros/cadast
     EsquemaRazaoVariavelComponent,
     TreinoDiscriminativoComponent,
     CadastrosComponent,
+    IntervaloFixoComponent,
+    IntervaloVariavelComponent,
+    EncadeamentoComponent,
+    AnoPeriodoComponent,
+    AnoPerComponent,
+    A2025s1Component,
+    A2025s2Component,
 
   ],
   imports: [

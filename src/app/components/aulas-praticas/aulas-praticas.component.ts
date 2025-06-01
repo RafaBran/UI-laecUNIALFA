@@ -17,8 +17,8 @@ export class AulasPraticasComponent implements OnInit {
     this.router.navigate(['/procedimentos']);
   }
 
-  irParaAgenda() {
-    this.router.navigate(['/agenda']);
+  irParaAnoPeriodo() {
+    this.router.navigate(['/ano-per']);
   }
 
 }

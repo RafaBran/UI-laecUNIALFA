@@ -1,0 +1,125 @@
+.aulas-praticas-containner {
+  height: 80vh;
+  background-color: var(--cinza-unialfa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: 'Manrope', sans-serif;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.box {
+  position: relative;
+  height: 80%;
+  width: 30%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Imagem de fundo */
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  z-index: 0;
+}
+
+.box-procedimentos::before {
+  background-image: url('/assets/images/foto-caixa-skinner.jpeg');
+}
+
+.box-agenda::before {
+  background-image: url('/assets/images/foto-laboratório-quadro.jpeg');
+}
+
+/* Hover escurece + zoom */
+.box:hover::before {
+  filter: brightness(0.6) blur(2px);
+  transform: scale(1.05);
+}
+
+/* Texto clicável centralizado */
+  .texto-box {
+    height: 40px;
+    line-height: 40px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    color: var(--branco);
+    background-color: var(--vermelho-unialfa);
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    margin: 0.3rem;
+    z-index: 1; /* Garante que esteja acima do fundo embaçado */
+  }
+
+
+.box:hover .texto-box {
+  background-color: var(--marinho-unialfa);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+}
+
+/* Fade-in geral */
+* {
+  animation: fadeIn 0.8s ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .box {
+    width: 100%;
+    max-width: 90%;
+    height: 60%;
+  }
+
+  .texto-box {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .aulas-praticas-containner {
+    height: 100%;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    width: 100%;
+    max-width: 90%;
+    height: 200px;
+  }
+
+  .texto-box {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+}

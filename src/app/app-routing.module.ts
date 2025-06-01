@@ -1,3 +1,5 @@
+import { A2025s2Component } from './components/aulas-praticas/agenda/ano-per/a2025s2/a2025s2.component';
+import { A2025s1Component } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EquipeComponent } from './components/equipe/equipe.component';
@@ -30,6 +32,11 @@ import { RecondicionamentoComponent } from './components/aulas-praticas/procedim
 import { EsquemaRazaoFixaComponent } from './components/aulas-praticas/procedimentos/esquema-razao-fixa/esquema-razao-fixa.component';
 import { EsquemaRazaoVariavelComponent } from './components/aulas-praticas/procedimentos/esquema-razao-variavel/esquema-razao-variavel.component';
 import { TreinoDiscriminativoComponent } from './components/aulas-praticas/procedimentos/treino-discriminativo/treino-discriminativo.component';
+import { IntervaloFixoComponent } from './components/aulas-praticas/procedimentos/intervalo-fixo/intervalo-fixo.component';
+import { IntervaloVariavelComponent } from './components/aulas-praticas/procedimentos/intervalo-variavel/intervalo-variavel.component';
+import { EncadeamentoComponent } from './components/aulas-praticas/procedimentos/encadeamento/encadeamento.component';
+import { AnoPeriodoComponent } from './components/aulas-praticas/procedimentos/ano-periodo/ano-periodo.component';
+import { AnoPerComponent } from './components/aulas-praticas/agenda/ano-per/ano-per.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/informacoes/(informacoes-menu:analise-do-comportamento)', pathMatch: 'full' },
@@ -59,6 +66,8 @@ const routes: Routes = [
       },
     ],
   },
+
+
   {
     path: 'procedimentos',
     component: ProcedimentosComponent,
@@ -104,13 +113,31 @@ const routes: Routes = [
         outlet: 'procedimentos',
       },
       {
+        path: 'interval-fixo',
+        component: IntervaloFixoComponent,
+        outlet: 'procedimentos',
+      },
+      {
+        path: 'intervalo-variavel',
+        component: IntervaloVariavelComponent,
+        outlet: 'procedimentos',
+      },
+      {
         path: 'treino-discriminativo',
         component: TreinoDiscriminativoComponent,
+        outlet: 'procedimentos',
+      },
+      {
+        path: 'encaminhamento',
+        component: EncadeamentoComponent,
         outlet: 'procedimentos',
       },
     ],
   },
 
+  { path: 'ano-per', component: AnoPerComponent },
+  { path: 'a2025s1', component: A2025s1Component },
+  { path: 'a2025s1', component: A2025s2Component },
   { path: 'agenda', component: AgendaComponent },
   { path: 'aulas-praticas', component: AulasPraticasComponent },
   { path: 'equipe', component: EquipeComponent },
