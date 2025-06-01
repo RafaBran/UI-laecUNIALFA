@@ -10,7 +10,6 @@ import { ArtigosETextosComponent } from './components/informacoes/artigos-e-text
 import { EticaComponent } from './components/informacoes/etica/etica.component';
 import { MonitoriaComponent } from './components/informacoes/monitoria/monitoria.component';
 import { FormsModule } from '@angular/forms';
-import { AgendaComponent } from './components/aulas-praticas/agenda/agenda.component';
 import { ProcedimentosComponent } from './components/aulas-praticas/procedimentos/procedimentos.component';
 import { BuenoMetutinoComponent } from './components/aulas-praticas/agenda/bueno-metutino/bueno-metutino.component';
 import { BuenoNoturnoComponent } from './components/aulas-praticas/agenda/bueno-noturno/bueno-noturno.component';
@@ -56,7 +55,6 @@ import { A2025s2Component } from './components/aulas-praticas/agenda/ano-per/a20
     ArtigosETextosComponent,
     EticaComponent,
     MonitoriaComponent,
-    AgendaComponent,
     ProcedimentosComponent,
     BuenoMetutinoComponent,
     BuenoNoturnoComponent,

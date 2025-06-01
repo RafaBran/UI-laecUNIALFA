@@ -20,7 +20,6 @@ import { ContatoAmandaComponent } from './components/equipe/contato-amanda/conta
 import { ContatoJuliaComponent } from './components/equipe/contato-julia/contato-julia.component';
 import { ProcedimentosComponent } from './components/aulas-praticas/procedimentos/procedimentos.component';
 import { LinhaDeBaseComponent } from './components/aulas-praticas/procedimentos/linha-de-base/linha-de-base.component';
-import { AgendaComponent } from './components/aulas-praticas/agenda/agenda.component';
 import { TreinoAoBebedouroComponent } from './components/aulas-praticas/procedimentos/treino-ao-bebedouro/treino-ao-bebedouro.component';
 import { ModelagemComponent } from './components/aulas-praticas/procedimentos/modelagem/modelagem.component';
 import { CrfComponent } from './components/aulas-praticas/procedimentos/crf/crf.component';
@@ -113,7 +112,7 @@ const routes: Routes = [
         outlet: 'procedimentos',
       },
       {
-        path: 'interval-fixo',
+        path: 'intervalo-fixo',
         component: IntervaloFixoComponent,
         outlet: 'procedimentos',
       },
@@ -128,7 +127,7 @@ const routes: Routes = [
         outlet: 'procedimentos',
       },
       {
-        path: 'encaminhamento',
+        path: 'encadeamento',
         component: EncadeamentoComponent,
         outlet: 'procedimentos',
       },
@@ -137,8 +136,7 @@ const routes: Routes = [
 
   { path: 'ano-per', component: AnoPerComponent },
   { path: 'a2025s1', component: A2025s1Component },
-  { path: 'a2025s1', component: A2025s2Component },
-  { path: 'agenda', component: AgendaComponent },
+  { path: 'a2025s2', component: A2025s2Component },
   { path: 'aulas-praticas', component: AulasPraticasComponent },
   { path: 'equipe', component: EquipeComponent },
   { path: 'gerenciamento', component: GerenciamentoComponent },

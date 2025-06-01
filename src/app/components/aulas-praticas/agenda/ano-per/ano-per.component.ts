@@ -17,7 +17,7 @@ export class AnoPerComponent implements OnInit {
     this.router.navigate(['/a2025s1']);
   }
   irPara20252() {
-    this.router.navigate(['/a2025s1']);
+    this.router.navigate(['/a2025s2']);
   }
 
   voltar() {
