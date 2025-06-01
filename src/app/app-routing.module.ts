@@ -36,6 +36,7 @@ import { IntervaloVariavelComponent } from './components/aulas-praticas/procedim
 import { EncadeamentoComponent } from './components/aulas-praticas/procedimentos/encadeamento/encadeamento.component';
 import { AnoPeriodoComponent } from './components/aulas-praticas/procedimentos/ano-periodo/ano-periodo.component';
 import { AnoPerComponent } from './components/aulas-praticas/agenda/ano-per/ano-per.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/informacoes/(informacoes-menu:analise-do-comportamento)', pathMatch: 'full' },
@@ -134,12 +135,12 @@ const routes: Routes = [
     ],
   },
 
-  { path: 'ano-per', component: AnoPerComponent },
+  { path: 'ano-semestre', component: AnoPerComponent },
   { path: 'a2025s1', component: A2025s1Component },
   { path: 'a2025s2', component: A2025s2Component },
   { path: 'aulas-praticas', component: AulasPraticasComponent },
   { path: 'equipe', component: EquipeComponent },
-  { path: 'gerenciamento', component: GerenciamentoComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'bueno-matutino', component: BuenoMetutinoComponent },
   { path: 'bueno-noturno', component: BuenoNoturnoComponent },
   { path: 'perimetral-noturno', component: PerimetralNoturnoComponent },

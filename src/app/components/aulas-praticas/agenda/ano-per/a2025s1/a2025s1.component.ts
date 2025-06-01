@@ -22,6 +22,6 @@ export class A2025s1Component implements OnInit {
   }
 
   voltar() {
-    this.router.navigate(['/ano-per']);
+    this.router.navigate(['/ano-semestre']);
   }
 }

@@ -24,7 +24,7 @@ export class A2025s2Component implements OnInit {
   }
 
   voltar() {
-    this.router.navigate(['/aulas-praticas']);
+    this.router.navigate(['/anos-semestre']);
   }
 
 }

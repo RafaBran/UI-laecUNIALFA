@@ -18,7 +18,7 @@ export class AulasPraticasComponent implements OnInit {
   }
 
   irParaAnoPeriodo() {
-    this.router.navigate(['/ano-per']);
+    this.router.navigate(['/ano-semestre']);
   }
 
 }

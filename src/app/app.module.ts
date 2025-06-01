@@ -43,6 +43,7 @@ import { AnoPeriodoComponent } from './components/aulas-praticas/procedimentos/a
 import { AnoPerComponent } from './components/aulas-praticas/agenda/ano-per/ano-per.component';
 import { A2025s1Component } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1.component';
 import { A2025s2Component } from './components/aulas-praticas/agenda/ano-per/a2025s2/a2025s2.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -84,6 +85,7 @@ import { A2025s2Component } from './components/aulas-praticas/agenda/ano-per/a20
     AnoPerComponent,
     A2025s1Component,
     A2025s2Component,
+    LoginComponent,
 
   ],
   imports: [
