@@ -90,7 +90,7 @@ h1 {
 }
 
 .botao-voltar:hover {
-  background-color: var(--vermelho-unialfa);
+  cursor: pointer;
   color: var(--branco);
   transform: translateX(2px);
 }

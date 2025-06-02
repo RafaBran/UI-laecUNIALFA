@@ -23,8 +23,8 @@ export class A2025s2Component implements OnInit {
     this.router.navigate(['/perimetral-noturno']);
   }
 
-  voltar() {
-    this.router.navigate(['/anos-semestre']);
+   voltar() {
+    this.router.navigate(['/ano-semestre']);
   }
 
 }

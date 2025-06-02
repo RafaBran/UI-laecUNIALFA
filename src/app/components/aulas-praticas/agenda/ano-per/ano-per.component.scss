@@ -30,7 +30,7 @@ h1 {
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
-  margin: 4rem;
+  margin-bottom: 3rem;
   color: var(--branco);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
@@ -90,7 +90,7 @@ h1 {
 }
 
 .botao-voltar:hover {
-  background-color: var(--vermelho-unialfa);
+  cursor: pointer;
   color: var(--branco);
   transform: translateX(2px);
 }

@@ -4,16 +4,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { InformacoesComponent } from './components/informacoes/informacoes.component';
 import { EquipeComponent } from './components/equipe/equipe.component';
-import { GerenciamentoComponent } from './components/gerenciamento/gerenciamento.component';
 import { AnaliseDoComportamentoComponent } from './components/informacoes/analise-do-comportamento/analise-do-comportamento.component';
 import { ArtigosETextosComponent } from './components/informacoes/artigos-e-textos/artigos-e-textos.component';
 import { EticaComponent } from './components/informacoes/etica/etica.component';
 import { MonitoriaComponent } from './components/informacoes/monitoria/monitoria.component';
 import { FormsModule } from '@angular/forms';
 import { ProcedimentosComponent } from './components/aulas-praticas/procedimentos/procedimentos.component';
-import { BuenoMetutinoComponent } from './components/aulas-praticas/agenda/bueno-metutino/bueno-metutino.component';
-import { BuenoNoturnoComponent } from './components/aulas-praticas/agenda/bueno-noturno/bueno-noturno.component';
-import { PerimetralNoturnoComponent } from './components/aulas-praticas/agenda/perimetral-noturno/perimetral-noturno.component';
 import { ContatoProfessorComponent } from './components/equipe/contato-professor/contato-professor.component';
 import { ContatoTecnicoComponent } from './components/equipe/contato-tecnico/contato-tecnico.component';
 import { ContatoAmandaComponent } from './components/equipe/contato-amanda/contato-amanda.component';
@@ -44,6 +40,11 @@ import { AnoPerComponent } from './components/aulas-praticas/agenda/ano-per/ano-
 import { A2025s1Component } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1.component';
 import { A2025s2Component } from './components/aulas-praticas/agenda/ano-per/a2025s2/a2025s2.component';
 import { LoginComponent } from './components/login/login.component';
+import { A2025s1BuenoMComponent } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1-bueno-m/a2025s1-bueno-m.component';
+import { A2025s1BuenoNComponent } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1-bueno-n/a2025s1-bueno-n.component';
+import { A2025s1PerimetralNComponent } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1-perimetral-n/a2025s1-perimetral-n.component';
+import { Aula01BuenoM20251Component } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1-bueno-m/aula01-bueno-m20251/aula01-bueno-m20251.component';
+
 
 @NgModule({
   declarations: [
@@ -51,15 +52,11 @@ import { LoginComponent } from './components/login/login.component';
     HeaderComponent,
     InformacoesComponent,
     EquipeComponent,
-    GerenciamentoComponent,
     AnaliseDoComportamentoComponent,
     ArtigosETextosComponent,
     EticaComponent,
     MonitoriaComponent,
     ProcedimentosComponent,
-    BuenoMetutinoComponent,
-    BuenoNoturnoComponent,
-    PerimetralNoturnoComponent,
     ContatoProfessorComponent,
     ContatoTecnicoComponent,
     ContatoAmandaComponent,
@@ -86,6 +83,10 @@ import { LoginComponent } from './components/login/login.component';
     A2025s1Component,
     A2025s2Component,
     LoginComponent,
+    A2025s1BuenoMComponent,
+    A2025s1BuenoNComponent,
+    A2025s1PerimetralNComponent,
+    Aula01BuenoM20251Component,
 
   ],
   imports: [
