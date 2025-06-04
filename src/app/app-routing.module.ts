@@ -36,6 +36,7 @@ import { A2025s1BuenoNComponent } from './components/aulas-praticas/agenda/ano-p
 import { A2025s1BuenoMComponent } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1-bueno-m/a2025s1-bueno-m.component';
 import { A2025s1PerimetralNComponent } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1-perimetral-n/a2025s1-perimetral-n.component';
 import { Aula01BuenoM20251Component } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1-bueno-m/aula01-bueno-m20251/aula01-bueno-m20251.component';
+import { SelecaoTurmaComponent } from './components/aulas-praticas/selecao-turma/selecao-turma.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/informacoes/(informacoes-menu:analise-do-comportamento)', pathMatch: 'full' },
@@ -150,6 +151,7 @@ const routes: Routes = [
       },
     ],
   },
+  { path: 'uso-laboratorio', component: SelecaoTurmaComponent },
   { path: 'equipe', component: EquipeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'contato-professor', component: ContatoProfessorComponent },
