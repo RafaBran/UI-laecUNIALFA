@@ -35,17 +35,7 @@ import { IntervaloFixoComponent } from './components/aulas-praticas/procedimento
 import { IntervaloVariavelComponent } from './components/aulas-praticas/procedimentos/intervalo-variavel/intervalo-variavel.component';
 import { EncadeamentoComponent } from './components/aulas-praticas/procedimentos/encadeamento/encadeamento.component';
 import { AnoPeriodoComponent } from './components/aulas-praticas/procedimentos/ano-periodo/ano-periodo.component';
-import { AnoPerComponent } from './components/aulas-praticas/agenda/ano-per/ano-per.component';
-import { A2025s1Component } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1.component';
-import { A2025s2Component } from './components/aulas-praticas/agenda/ano-per/a2025s2/a2025s2.component';
 import { LoginComponent } from './components/login/login.component';
-import { A2025s1BuenoMComponent } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1-bueno-m/a2025s1-bueno-m.component';
-import { A2025s1BuenoNComponent } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1-bueno-n/a2025s1-bueno-n.component';
-import { A2025s1PerimetralNComponent } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1-perimetral-n/a2025s1-perimetral-n.component';
-import { Aula01BuenoM20251Component } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1-bueno-m/aula01-bueno-m20251/aula01-bueno-m20251.component';
-import { A2025s2BuenoMComponent } from './components/aulas-praticas/agenda/ano-per/a2025s2/a2025s2-bueno-m/a2025s2-bueno-m.component';
-import { A2025s2BuenoNComponent } from './components/aulas-praticas/agenda/ano-per/a2025s2/a2025s2-bueno-n/a2025s2-bueno-n.component';
-import { A2025s2PerimetralNComponent } from './components/aulas-praticas/agenda/ano-per/a2025s2/a2025s2-perimetral-n/a2025s2-perimetral-n.component';
 import { SelecaoTurmaComponent } from './components/aulas-praticas/selecao-turma/selecao-turma.component';
 
 @NgModule({
@@ -80,17 +70,7 @@ import { SelecaoTurmaComponent } from './components/aulas-praticas/selecao-turma
     IntervaloVariavelComponent,
     EncadeamentoComponent,
     AnoPeriodoComponent,
-    AnoPerComponent,
-    A2025s1Component,
-    A2025s2Component,
     LoginComponent,
-    A2025s1BuenoMComponent,
-    A2025s1BuenoNComponent,
-    A2025s1PerimetralNComponent,
-    Aula01BuenoM20251Component,
-    A2025s2BuenoMComponent,
-    A2025s2BuenoNComponent,
-    A2025s2PerimetralNComponent,
     SelecaoTurmaComponent,
 
   ],
