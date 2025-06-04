@@ -31,7 +31,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { CadastrosComponent } from './components/aulas-praticas/cadastros/cadastros.component';
 import { IntervaloFixoComponent } from './components/aulas-praticas/procedimentos/intervalo-fixo/intervalo-fixo.component';
 import { IntervaloVariavelComponent } from './components/aulas-praticas/procedimentos/intervalo-variavel/intervalo-variavel.component';
 import { EncadeamentoComponent } from './components/aulas-praticas/procedimentos/encadeamento/encadeamento.component';
@@ -44,7 +43,10 @@ import { A2025s1BuenoMComponent } from './components/aulas-praticas/agenda/ano-p
 import { A2025s1BuenoNComponent } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1-bueno-n/a2025s1-bueno-n.component';
 import { A2025s1PerimetralNComponent } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1-perimetral-n/a2025s1-perimetral-n.component';
 import { Aula01BuenoM20251Component } from './components/aulas-praticas/agenda/ano-per/a2025s1/a2025s1-bueno-m/aula01-bueno-m20251/aula01-bueno-m20251.component';
-
+import { A2025s2BuenoMComponent } from './components/aulas-praticas/agenda/ano-per/a2025s2/a2025s2-bueno-m/a2025s2-bueno-m.component';
+import { A2025s2BuenoNComponent } from './components/aulas-praticas/agenda/ano-per/a2025s2/a2025s2-bueno-n/a2025s2-bueno-n.component';
+import { A2025s2PerimetralNComponent } from './components/aulas-praticas/agenda/ano-per/a2025s2/a2025s2-perimetral-n/a2025s2-perimetral-n.component';
+import { SelecaoTurmaComponent } from './components/aulas-praticas/selecao-turma/selecao-turma.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +76,6 @@ import { Aula01BuenoM20251Component } from './components/aulas-praticas/agenda/a
     EsquemaRazaoFixaComponent,
     EsquemaRazaoVariavelComponent,
     TreinoDiscriminativoComponent,
-    CadastrosComponent,
     IntervaloFixoComponent,
     IntervaloVariavelComponent,
     EncadeamentoComponent,
@@ -87,6 +88,10 @@ import { Aula01BuenoM20251Component } from './components/aulas-praticas/agenda/a
     A2025s1BuenoNComponent,
     A2025s1PerimetralNComponent,
     Aula01BuenoM20251Component,
+    A2025s2BuenoMComponent,
+    A2025s2BuenoNComponent,
+    A2025s2PerimetralNComponent,
+    SelecaoTurmaComponent,
 
   ],
   imports: [

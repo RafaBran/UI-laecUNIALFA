@@ -29,7 +29,7 @@
       required
     ></textarea> -->
 
-    <form (ngSubmit)="enviarMensagem()" #emailForm="ngForm">
+    <form>
       <label for="nome">Nome:</label>
       <input
         type="text"
@@ -59,7 +59,7 @@
         placeholder="Digite sua mensagem"
       ></textarea>
 
-      <button type="submit" [disabled]="emailForm.invalid">Enviar</button>
+      <button type="submit">Enviar</button>
     </form>
 
     <div class="botoes">
