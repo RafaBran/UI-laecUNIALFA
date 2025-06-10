@@ -12,10 +12,5 @@ export class SelecaoTurmaComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  irPara20251() {
-    this.router.navigate(['/a2025s1']);
-  }
-  irPara20252() {
-    this.router.navigate(['/a2025s2']);
-  }
+
 }

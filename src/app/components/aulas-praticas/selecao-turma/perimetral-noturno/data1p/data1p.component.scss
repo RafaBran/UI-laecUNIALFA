@@ -1,0 +1,131 @@
+.informacoes-etica-containner {
+  height: 77%;
+  width: 65%;
+  position: fixed;
+  left: 25%;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+  background-color: var(--branco);
+  border-radius: 1rem;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lab-mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 40px 32px 40px;
+  border: 3px solid #000;
+  width: fit-content;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.quadro-branco {
+  font-weight: bold;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--vermelho-unialfa, #c62828);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: none;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+}
+
+.quadro-titulo {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--vermelho-unialfa, #c62828);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.fileiras {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.linha-mesas {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  width: 100%;
+}
+
+.linha-fundo {
+  margin-top: 0;
+}
+
+.mesa {
+  border: 3px solid var(--marinho-unialfa, #1a237e);
+  width: 170px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fafdff 60%, #e3eafc 100%);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.mesa:hover {
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.16);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.lado {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: #222;
+  z-index: 1;
+  letter-spacing: 0.2px;
+}
+
+.divisoria-horizontal {
+  height: 0;
+  border-top: 2px solid var(--vermelho-unialfa, #c62828);
+  margin: 0 18px;
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  .informacoes-etica-containner {
+    width: 98vw;
+    left: 0;
+    padding: 0;
+  }
+  .lab-mapa {
+    padding: 12px 4px 12px 4px;
+  }
+  .fileiras {
+    gap: 12px;
+  }
+  .linha-mesas {
+    gap: 8px;
+  }
+  .mesa {
+    width: 90px;
+    height: 54px;
+    font-size: 0.95rem;
+  }
+}

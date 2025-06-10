@@ -34,9 +34,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IntervaloFixoComponent } from './components/aulas-praticas/procedimentos/intervalo-fixo/intervalo-fixo.component';
 import { IntervaloVariavelComponent } from './components/aulas-praticas/procedimentos/intervalo-variavel/intervalo-variavel.component';
 import { EncadeamentoComponent } from './components/aulas-praticas/procedimentos/encadeamento/encadeamento.component';
-import { AnoPeriodoComponent } from './components/aulas-praticas/procedimentos/ano-periodo/ano-periodo.component';
 import { LoginComponent } from './components/login/login.component';
 import { SelecaoTurmaComponent } from './components/aulas-praticas/selecao-turma/selecao-turma.component';
+import { BuenoMatutinoComponent } from './components/aulas-praticas/selecao-turma/bueno-matutino/bueno-matutino.component';
+import { BuenoNoturnoComponent } from './components/aulas-praticas/selecao-turma/bueno-noturno/bueno-noturno.component';
+import { PerimetralNoturnoComponent } from './components/aulas-praticas/selecao-turma/perimetral-noturno/perimetral-noturno.component';
+import { Data1Component } from './components/aulas-praticas/selecao-turma/bueno-matutino/data1/data1.component';
+import { Data1pComponent } from './components/aulas-praticas/selecao-turma/perimetral-noturno/data1p/data1p.component';
 
 @NgModule({
   declarations: [
@@ -69,9 +73,13 @@ import { SelecaoTurmaComponent } from './components/aulas-praticas/selecao-turma
     IntervaloFixoComponent,
     IntervaloVariavelComponent,
     EncadeamentoComponent,
-    AnoPeriodoComponent,
     LoginComponent,
     SelecaoTurmaComponent,
+    BuenoMatutinoComponent,
+    BuenoNoturnoComponent,
+    PerimetralNoturnoComponent,
+    Data1Component,
+    Data1pComponent,
 
   ],
   imports: [

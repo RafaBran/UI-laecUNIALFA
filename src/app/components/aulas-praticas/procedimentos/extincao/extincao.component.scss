@@ -11,7 +11,8 @@
 }
 
 .box-titulo {
-  height: 20%;
+  height: 100px;
+  min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,10 +20,11 @@
 
 .titulo {
   text-align: center;
-  line-height: 100px;
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+  margin: 0;
 }
 
 .box-recursos {
@@ -41,14 +43,14 @@
   height: 3rem;
   margin-left: 2rem;
   display: block;
-  background-image: url('/assets/icons/papel-branca.svg');
+  background-image: url("/assets/icons/papel-branca.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: background-image 0.5s ease;
 }
 
 .icon-papper:hover {
-  background-image: url('/assets/icons/papel-vermelho.svg');
+  background-image: url("/assets/icons/papel-vermelho.svg");
   transform: scale(1.1);
 }
 
@@ -57,16 +59,15 @@
   height: 3rem;
   margin-left: 1rem;
   display: block;
-  background-image: url('/assets/icons/tabela-branca.svg');
+  background-image: url("/assets/icons/tabela-branca.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: background-image 0.5s ease;
 }
 
 .icon-table:hover {
-  background-image: url('/assets/icons/tabela-vermelha.svg');
+  background-image: url("/assets/icons/tabela-vermelha.svg");
   transform: scale(1.1);
-
 }
 
 .icon-monitor {
@@ -74,14 +75,14 @@
   height: 3rem;
   margin-left: 1rem;
   display: block;
-  background-image: url('/assets/icons/monitor-branco.svg');
+  background-image: url("/assets/icons/monitor-branco.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transition: background-image 0.5s ease;
 }
 
 .icon-monitor:hover {
-  background-image: url('/assets/icons/monitor-vermelho.svg');
+  background-image: url("/assets/icons/monitor-vermelho.svg");
   transform: scale(1.1);
 }
 

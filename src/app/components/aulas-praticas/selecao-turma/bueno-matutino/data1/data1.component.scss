@@ -11,8 +11,7 @@
 }
 
 .box-titulo {
-  height: 100px;
-  min-height: 60px;
+  height: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,11 +19,11 @@
 
 .titulo {
   text-align: center;
+  line-height: 100px;
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
-  margin: 0;
 }
 
 .box-recursos {
@@ -32,8 +31,8 @@
   width: 100%;
   display: flex;
   background-color: var(--marinho-unialfa);
-  border-top: 6px solid var(--vermelho-unialfa);
   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5);
+  border-top: 6px solid var(--vermelho-unialfa);
   justify-content: flex-start;
   align-items: center;
 }
@@ -132,6 +131,125 @@
 .texto em {
   font-style: italic;
   color: #555;
+}
+
+// ESTILZAÇÃO DA MESA
+.lab-mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--marinho-unialfa);
+  border-radius: 12px;
+  background: linear-gradient(120deg, #f0f4f8 80%, #dbeafe 100%);
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.08);
+  padding: 24px 16px 32px 16px;
+
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quadro-branco {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--branco);
+  background: var(--marinho-unialfa);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.06);
+  padding: 4px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.quadro-icon {
+  font-size: 1.1em;
+  margin-right: 4px;
+  opacity: 0.85;
+}
+
+.quadro-titulo {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--branco);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+.fileiras {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.coluna-mesas {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mesa {
+  border: 2px solid var(--marinho-unialfa);
+  border-radius: 6px;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #f8fafc 60%, #e3e8ee 100%);
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--marinho-unialfa);
+  position: relative;
+  margin: 0;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.mesa:hover {
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,0.14);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.mesa .divisoria-horizontal {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  width: 80%;
+  height: 0;
+  border-top: 2px solid var(--vermelho-unialfa);
+  border-radius: 1px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.mesa .lado {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background: rgba(255,255,255,0.92);
+  border-radius: 0;
+  transition: background 0.2s;
+}
+
+.mesa .lado:hover {
+  background: #e3e8ee;
 }
 
 @keyframes fadeIn {

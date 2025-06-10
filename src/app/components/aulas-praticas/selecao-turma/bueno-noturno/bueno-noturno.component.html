@@ -1,0 +1,15 @@
+<div class="procedimentos-containner">
+  <div class="nav-box limiter aligner">
+    <nav class="nav-bar">
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { 'bueno-noturno': ['data1'] } }]"
+      >
+        <p>data</p></a
+      >
+
+      <button class="botao-voltar" (click)="voltar()">Voltar</button>
+    </nav>
+  </div>
+  <router-outlet name="bueno-noturno"></router-outlet>
+</div>
