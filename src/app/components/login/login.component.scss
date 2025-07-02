@@ -1,3 +1,38 @@
+// Garante que os mat-form-field ocupem toda a largura do container e fiquem alinhados
+.login-full-width-field {
+  width: 100%;
+  margin-bottom: 6px;
+  box-sizing: border-box;
+}
+
+::ng-deep .mat-form-field {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+::ng-deep .mat-form-field-infix {
+  width: 100% !important;
+  box-sizing: border-box;
+  padding: 0 !important;
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+::ng-deep .mat-input-element {
+  width: 100% !important;
+  box-sizing: border-box;
+  padding: 12px !important;
+  min-width: 0 !important;
+}
+
+form {
+  gap: 0.5rem !important;
+}
+
+button[type="submit"] {
+  margin-top: 8px;
+}
 .gerenciamento-containner {
   height: 80vh;
   background-color: var(--cinza-unialfa);
@@ -42,13 +77,15 @@ input {
   font-size: 1rem;
   border-radius: 8px;
   border: 1px solid var(--cinza-unialfa);
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 5px;
   resize: vertical;
 }
 
 button {
-  background-color: var(--vermelho-unialfa);
-  color: white;
+  background-color: var(--marinho-unialfa);
+  color: rgb(255, 255, 255);
   padding: 0.8rem;
   border: none;
   border-radius: 0.8rem;

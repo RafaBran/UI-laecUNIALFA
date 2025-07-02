@@ -35,9 +35,18 @@ import { BuenoMatutinoComponent } from './components/aulas-praticas/selecao-turm
 import { Data1Component } from './components/aulas-praticas/selecao-turma/bueno-matutino/data1/data1.component';
 import { PerimetralNoturnoComponent } from './components/aulas-praticas/selecao-turma/perimetral-noturno/perimetral-noturno.component';
 import { Data1pComponent } from './components/aulas-praticas/selecao-turma/perimetral-noturno/data1p/data1p.component';
+import { AuthGuard } from './auth/auth.guard';
+import { GerenciamentoComponent } from './components/login/gerenciamento/gerenciamento.component';
+import { TurmasComponent } from './components/login/gerenciamento/turmas/turmas.component';
+import { UsuariosComponent } from './components/login/gerenciamento/usuarios/usuarios.component';
+import { GruposComponent } from './components/login/gerenciamento/grupos/grupos.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/informacoes/(informacoes-menu:analise-do-comportamento)', pathMatch: 'full' },
+  {
+    path: '',
+    redirectTo: '/informacoes/(informacoes-menu:analise-do-comportamento)',
+    pathMatch: 'full',
+  },
 
   {
     path: 'informacoes',
@@ -143,7 +152,6 @@ const routes: Routes = [
         component: Data1Component,
         outlet: 'bueno-matutino',
       },
-
     ],
   },
   {
@@ -155,7 +163,6 @@ const routes: Routes = [
         component: Data1Component,
         outlet: 'bueno-noturno',
       },
-
     ],
   },
   {
@@ -167,11 +174,32 @@ const routes: Routes = [
         component: Data1pComponent,
         outlet: 'perimetral-noturno',
       },
-
     ],
   },
   { path: 'equipe', component: EquipeComponent },
   { path: 'login', component: LoginComponent },
+  {
+    path: 'gerenciamento',
+    component: GerenciamentoComponent,
+    canActivate: [AuthGuard],
+    children: [
+      {
+        path: 'usuarios',
+        component: UsuariosComponent,
+        outlet: 'gerenciamento',
+      },
+      {
+        path: 'grupos',
+        component: GruposComponent,
+        outlet: 'gerenciamento',
+      },
+      {
+        path: 'turmas',
+        component: TurmasComponent,
+        outlet: 'gerenciamento',
+      }
+    ],
+  },
   { path: 'contato-professor', component: ContatoProfessorComponent },
   { path: 'contato-tecnico', component: ContatoTecnicoComponent },
   { path: 'contato-hadasa', component: ContatoHadasaComponent },

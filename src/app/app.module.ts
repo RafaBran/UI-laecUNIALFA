@@ -31,6 +31,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 import { IntervaloFixoComponent } from './components/aulas-praticas/procedimentos/intervalo-fixo/intervalo-fixo.component';
 import { IntervaloVariavelComponent } from './components/aulas-praticas/procedimentos/intervalo-variavel/intervalo-variavel.component';
 import { EncadeamentoComponent } from './components/aulas-praticas/procedimentos/encadeamento/encadeamento.component';
@@ -41,6 +44,10 @@ import { BuenoNoturnoComponent } from './components/aulas-praticas/selecao-turma
 import { PerimetralNoturnoComponent } from './components/aulas-praticas/selecao-turma/perimetral-noturno/perimetral-noturno.component';
 import { Data1Component } from './components/aulas-praticas/selecao-turma/bueno-matutino/data1/data1.component';
 import { Data1pComponent } from './components/aulas-praticas/selecao-turma/perimetral-noturno/data1p/data1p.component';
+import { GerenciamentoComponent } from './components/login/gerenciamento/gerenciamento.component';
+import { UsuariosComponent } from './components/login/gerenciamento/usuarios/usuarios.component';
+import { GruposComponent } from './components/login/gerenciamento/grupos/grupos.component';
+import { TurmasComponent } from './components/login/gerenciamento/turmas/turmas.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +87,10 @@ import { Data1pComponent } from './components/aulas-praticas/selecao-turma/perim
     PerimetralNoturnoComponent,
     Data1Component,
     Data1pComponent,
-
+    GerenciamentoComponent,
+    UsuariosComponent,
+    GruposComponent,
+    TurmasComponent,
   ],
   imports: [
     BrowserModule,
@@ -88,8 +98,10 @@ import { Data1pComponent } from './components/aulas-praticas/selecao-turma/perim
     FormsModule,
     BrowserAnimationsModule,
     MatTooltipModule,
-    BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

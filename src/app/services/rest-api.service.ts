@@ -65,15 +65,10 @@ export class RestApiService {
   }
 
   public login(url: string, username: string, password: string): Observable<any> {
-    const body = new HttpParams()
-      .set('username', username)
-      .set('password', password);
-    return this.http.post(url,
-      body.toString(),
-      {
-        headers: new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded')
-      }
-    );
+    const body = { username, senha: password };
+    return this.http.post(url, body, {
+      headers: new HttpHeaders().set('Content-Type', 'application/json')
+    });
   }
 
   public refreshToken(url: string): Observable<any> {

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -6,18 +8,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  username: string = '';
+  password: string = '';
+  loginError: string = '';
+  showPassword = false;
 
-  constructor() { }
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  username = '';
-  password = '';
-
   onSubmit() {
-    console.log('Usuário:', this.username);
-    console.log('Senha:', this.password);
-    // Aqui você pode chamar um serviço de autenticação, por exemplo
+    this.loginError = '';
+    this.authService.login(this.username, this.password).subscribe({
+      next: (res) => {
+        this.router.navigate(['/gerenciamento']); // ajuste para a rota protegida desejada
+      },
+      error: (err) => {
+        this.loginError = 'Usuário ou senha inválidos.';
+      }
+    });
+  }
+
+  toggleShowPassword() {
+    this.showPassword = !this.showPassword;
   }
 }

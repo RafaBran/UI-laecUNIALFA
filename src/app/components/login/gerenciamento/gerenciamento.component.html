@@ -1,0 +1,55 @@
+<div class="procedimentos-containner">
+  <div class="nav-box limiter aligner">
+    <nav class="nav-bar">
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { gerenciamento: ['usuarios'] } }]"
+      >
+        <p>usuários</p></a
+      >
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { gerenciamento: ['grupos'] } }]"
+      >
+        <p>grupos</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { gerenciamento: ['turmas'] } }]"
+      >
+        <p>turmas</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { gerenciamento: ['animais'] } }]"
+      >
+        <p>animais</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { gerenciamento: ['relatorios'] } }]"
+      >
+        <p>relatórios</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { gerenciamento: ['registros'] } }]"
+      >
+        <p>manutenção</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { gerenciamento: ['aulas'] } }]"
+      >
+        <p>aulas</p>
+      </a>
+      <a
+        class="nav-bar-item"
+        [routerLink]="[{ outlets: { gerenciamento: ['procedimentos'] } }]"
+      >
+        <p>procedimentos</p>
+      </a>
+    </nav>
+  </div>
+  <router-outlet name="gerenciamento"></router-outlet>
+</div>
