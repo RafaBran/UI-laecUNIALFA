@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TableModule } from 'primeng/table';
+import { InputTextModule } from 'primeng/inputtext';
 import { HeaderComponent } from './components/header/header.component';
 import { InformacoesComponent } from './components/informacoes/informacoes.component';
 import { EquipeComponent } from './components/equipe/equipe.component';
@@ -101,7 +103,9 @@ import { TurmasComponent } from './components/login/gerenciamento/turmas/turmas.
     HttpClientModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    TableModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

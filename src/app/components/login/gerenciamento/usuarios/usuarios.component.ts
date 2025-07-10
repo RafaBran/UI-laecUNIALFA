@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsuariosService, UsuarioDTO } from 'src/app/services/usuarios.service';
 
 @Component({
   selector: 'app-usuarios',
@@ -11,5 +12,7 @@ export class UsuariosComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
 
 }
