@@ -5,7 +5,11 @@ import { Observable } from 'rxjs';
 export interface UsuarioDTO {
   usuario_id?: number;
   nomeUsuario?: string;
-  tipoUsuario?: string;
+  emailUsuario?: string;
+  username?: string;
+  tipoUsuario?: number;
+  grupoId?: number;
+  senha?: string;
 }
 
 @Injectable({

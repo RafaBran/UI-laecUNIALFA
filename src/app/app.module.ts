@@ -3,6 +3,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TableModule } from 'primeng/table';
 import { InputTextModule } from 'primeng/inputtext';
+import { TabViewModule } from 'primeng/tabview';
 import { HeaderComponent } from './components/header/header.component';
 import { InformacoesComponent } from './components/informacoes/informacoes.component';
 import { EquipeComponent } from './components/equipe/equipe.component';
@@ -50,6 +51,8 @@ import { GerenciamentoComponent } from './components/login/gerenciamento/gerenci
 import { UsuariosComponent } from './components/login/gerenciamento/usuarios/usuarios.component';
 import { GruposComponent } from './components/login/gerenciamento/grupos/grupos.component';
 import { TurmasComponent } from './components/login/gerenciamento/turmas/turmas.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { JwtInterceptor } from './services/jwt.interceptor';
 
 @NgModule({
   declarations: [
@@ -105,9 +108,16 @@ import { TurmasComponent } from './components/login/gerenciamento/turmas/turmas.
     MatInputModule,
     MatIconModule,
     TableModule,
-    InputTextModule
+    InputTextModule,
+    TabViewModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: JwtInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,11 +1,128 @@
 <div class="informacoes-etica-containner">
   <div class="box-titulo">
-    <h2 class="titulo">lista de usuários</h2>
-  </div>
-  <div class="box-recursos">
-
+    <h2 class="titulo">usuários</h2>
   </div>
   <div class="texto">
+    <p-table
+      #dt
+      [value]="usuarios"
+      sortField="id"
+      [sortOrder]="-1"
+      currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords}"
+      [rowsPerPageOptions]="[50, 100, 150]"
+      [paginator]="true"
+      [rows]="50"
+      [showCurrentPageReport]="true"
+      [globalFilterFields]="['nomeUsuario', 'emailUsuario', 'username', 'tipoUsuario', 'grupoId', 'senha']"
+      styleClass="p-datatable-gridlines"
+      responsiveLayout="scroll"
+    >
+      <ng-template pTemplate="caption">
+        <div class="flex">
+          <span class="p-input-icon-left mr-2">
+            <i class="pi pi-search"></i>
+            <input
+              pInputText
+              type="text"
+              [(ngModel)]="filtro"
+              (input)="dt.filterGlobal(filtro, 'contains')"
+              placeholder="Procurar..."
+            />
+          </span>
+          <button
+            type="button"
+            pButton
+            pRipple
+            icon="pi pi-file-excel"
+            class="p-button-success mr-2"
+            pTooltip="XLS"
+            tooltipPosition="top"
+            (click)="downloadExcel()"
+          ></button>
+          <button
+            type="button"
+            pButton
+            pRipple
+            icon="pi pi-file-pdf"
+            class="p-button-danger mr-2"
+            pTooltip="PDF"
+            tooltipPosition="top"
+            (click)="downloadPdf()"
+          ></button>
+          <button
+            pButton
+            icon="pi pi-plus"
+            label="Cadastrar"
+            class="p-button-raised"
+            (click)="CadastrarDialog()"
+          ></button>
+        </div>
+      </ng-template>
 
+      <ng-template pTemplate="header">
+        <tr>
+          <th class="text-center">Ações</th>
+          <th class="text-center" pSortableColumn="nomeUsuario">
+            Nome
+            <p-sortIcon field="nomeUsuario"></p-sortIcon>
+            <p-columnFilter field="nomeUsuario" display="menu"></p-columnFilter>
+          </th>
+          <th class="text-center" pSortableColumn="emailUsuario">
+            E-mail
+            <p-sortIcon field="emailUsuario"></p-sortIcon>
+            <p-columnFilter field="emailUsuario" display="menu"></p-columnFilter>
+          </th>
+          <th class="text-center" pSortableColumn="username">
+            Login
+            <p-sortIcon field="username"></p-sortIcon>
+            <p-columnFilter field="username" display="menu"></p-columnFilter>
+          </th>
+          <th class="text-center" pSortableColumn="tipoUsuario">
+            Tipo de Usuário
+            <p-sortIcon field="tipoUsuario"></p-sortIcon>
+            <p-columnFilter field="tipoUsuario" display="menu"></p-columnFilter>
+          </th>
+          <th class="text-center" pSortableColumn="grupoId">
+            Grupo
+            <p-sortIcon field="grupoId"></p-sortIcon>
+            <p-columnFilter field="grupoId" display="menu"></p-columnFilter>
+          </th>
+          <th class="text-center" pSortableColumn="senha">
+            Senha
+            <p-sortIcon field="senha"></p-sortIcon>
+            <p-columnFilter field="senha" display="menu"></p-columnFilter>
+          </th>
+        </tr>
+      </ng-template>
+
+      <ng-template pTemplate="body" let-usuario>
+        <tr>
+          <td class="text-center">
+            <div class="d-flex justify-content-center align-items-center">
+              <button
+                pButton
+                icon="pi pi-pencil"
+                class="p-button-raised p-button-rounded mr-1"
+                (click)="editarDialog(usuario.usuario_id)"
+                pTooltip="Editar"
+              ></button>
+              <button
+                pButton
+                icon="pi pi-trash"
+                class="p-button-danger p-button-rounded p-button-raised"
+                pTooltip="Excluir"
+                (click)="excluir($event, usuario.usuario_id)"
+              ></button>
+            </div>
+          </td>
+          <td class="text-center">{{ usuario.nomeUsuario }}</td>
+          <td class="text-center">{{ usuario.emailUsuario }}</td>
+          <td class="text-center">{{ usuario.username }}</td>
+          <td class="text-center">{{ usuario.tipoUsuario }}</td>
+          <td class="text-center">{{ usuario.grupoId }}</td>
+          <td class="text-center">{{ usuario.senha }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
   </div>
 </div>
